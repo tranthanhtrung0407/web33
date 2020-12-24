@@ -1,0 +1,26 @@
+#main{
+	width: 975px;
+	height: 125px;
+	background-color: #F7F4F4;
+}
+#div{
+	float: left;
+	text-align: center;
+	
+	width: 18%;
+	height: 150px;
+	margin-right: 1.5%;
+	padding: 20px;
+}
+#t1:hover{
+	color: red;
+	text-decoration: underline;
+}
+#t2:hover{
+	color: #13BFB1;
+	text-decoration: underline;	
+}
+#t3:hover{
+	color: blue;
+	text-decoration: underline;
+}

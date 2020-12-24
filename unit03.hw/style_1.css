@@ -1,0 +1,32 @@
+#main{
+	width: 100%;
+	height: 200px;
+	border-top: 2px double#ccc;
+}
+#div{
+	float: left;
+	text-align: center;
+	border: 1.5px solid #ccc;
+	width: 10%;
+	height: 150px;
+	margin-right: 1.5%;
+	padding: 20px;
+}
+#ten{
+	color: orange;
+}
+#gia{
+	color: red;
+	font-size: bold;
+}
+#div:hover{
+	border: 1.5px solid orange;
+}
+
+#ten:hover{
+	color: black;
+}
+
+#gia:hover{
+	color: blue;
+}
