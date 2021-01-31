@@ -1,0 +1,42 @@
+form{
+	margin-top: 2%;
+	width: 70%;
+	border:2px solid #ccc;
+	border-radius: 20px;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+li{
+	display: inline-block;
+}
+div{
+	padding: 15px 0 15px 0;
+}
+div input{
+	margin-left: 30px;
+}
+div li:first-child{
+	width: 18%;
+	line-height: 150%;
+}
+div li:last-child{
+	width: 50%;
+	padding-right: 50px;
+}
+#name,#email,#psw,#repsw,#phone{
+	width: 350px;
+	height: 20px;
+}
+.but{
+	width: 350px;
+	margin: 0 auto;
+}
+.but input{
+	width: 27%;
+	background: blue;
+	color:white;
+	margin-right: 50px;
+}
+.but input:last-child{
+	float: right;
+}

@@ -1,44 +1,52 @@
-var arrImg = document.getElementsByClassName('slide_img');
-var arrSrcImg = [];
+var slideIndex = 1;
+showSlides(slideIndex);
 
-for (var i = 0; i < arrImg.length; i++) {
-	arrSrcImg.push(arrImg[i].getAttribute('src'));
-}
-console.log(arrSrcImg);
-
-var index=0;
-arrImg[index].parentNode.style.display='block';
-
-var btnPrev = document.getElementsByClassName('prev')[0];
-var btnNext = document.getElementsByClassName('next')[0];
-
-btnPrev.addEventListener('click', fnPrev,false);
-btnNext.addEventListener('click', fnNext,false);
-
-function fnPrev(){
-	if (index == 0) {
-		index  = arrSrcImg.length -1;
-	} else {
-		index--;
-	}
-	for (var i = 0; i < arrSrcImg.length; i++) {
-		arrImg[i].parentNode.style.display = 'none';
-	}
-	arrImg[index].parentNode.style.display = 'block';
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function fnNext(){
-	if (index  == arrSrcImg.length -1){
-		index=0;
-	} else {
-		index++;
-	}
-	for (var i = 0; i < arrSrcImg.length; i++) {
-		arrImg[i].parentNode.style.display = 'none';
-	}
-	arrImg[index].parentNode.style.display = 'block';
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+setTime();
+
+function setTime(){
+  setTimeout(time, 5000)
 }
 
-setInterval(function(){
-	fnNext();
-},10000); 
+function time(n) {
+  showSlides(slideIndex += 1)
+  setTime()
+}
+
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("slide_img");
+  var li = document.getElementsByClassName("li");
+  if (n > slides.length) {
+    slideIndex = 1
+  }    
+  if (n < 1) {
+    slideIndex = slides.length
+  }
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+
+
+  // slideIndex++;
+  // if (slideIndex > slides.length) {
+    // slideIndex = 1
+  // }
+      
+  for (i = 0; i < li.length; i++) {
+    li[i].className = li[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";  
+  li[slideIndex-1].className += " active";
+
+  // setTimeout(showSlides, 5000); // Change image every 2 seconds
+}

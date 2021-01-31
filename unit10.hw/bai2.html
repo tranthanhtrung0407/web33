@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bai2.css">
+</head>
+<body>
+	<form action="" name="frm">
+		<div>
+			<li>Họ và tên</li>
+			<li>
+				<input type="text" id="name" name="name1" placeholder="Nhập họ tên ..." required="">
+			</li>
+			&emsp;<span id="ername" style="color: red"></span>
+		</div>
+		<div>
+			<li>Giới Tính</li>
+			<li id="gender">
+				<input type="radio" name="gioitinh" id="male">Nam
+				<input type="radio" name="gioitinh" id="male">Nữ
+			</li>
+		</div>
+		<div>
+			<li>Email</li>
+			<li>
+				<input type="email" id="email" name="email1"  placeholder="Nhập email...">
+			</li>
+			&emsp;<span id="eremail" style="color: red"></span>
+		</div>
+		<div>
+			<li>Số Điện Thoại</li>
+			<li>
+				<input type="text" id="phone" name="phone1" placeholder="Nhập số điện thoại...">
+			</li>
+			&emsp;<span id="erphone" style="color: red"></span>
+		</div>
+		<div>
+			<li>Mật Khẩu</li>
+			<li>
+				<input type="password" id="psw" name="psw1" >
+			</li>
+			&emsp;<span id="erpsw" style="color: red"></span>
+		</div>
+		<div>
+			<li>Xác nhận mật khẩu</li>
+			<li>
+				<input type="password" id="repsw" name="repsw1" >
+			</li>
+			&emsp;<span id="errepsw" style="color: red"></span>
+		</div>
+
+	</form>
+	<div class="but">
+		<input type="button" onclick="Dangki()"value="Đăng Kí">
+    	<input type="button" onclick="Delete()" value="Xóa Trắng">
+	</div>
+	<script src="js/bai2.js"></script>
+</body>
+</html>
