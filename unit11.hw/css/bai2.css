@@ -1,0 +1,40 @@
+body{
+	background: black;
+
+	margin-top: 100px;
+}
+.cart{
+	margin-top: 140px;
+	width: 40%;
+	margin:0 auto;
+	background: #484848;
+	color:white;
+}
+.title{
+	color:white;
+	font-size: 18px;
+	top: 15px;
+    position: absolute;
+}
+.cart .cart-header{
+	border-bottom:2px solid black;
+	padding:10px 0 10px 0;
+	position: relative;
+}
+.cart .cart-body{
+	display: none;
+	border-bottom: 2px solid black;
+	padding:20px 0 20px 40px;
+}
+.cart.active .cart-body{
+	display: block;
+}
+button{
+	position: relative;
+	margin-left: -10px;
+	border-radius: 3px;
+	background-color: #80FF00;
+}
+button span{
+	opacity: 0.4;
+}
