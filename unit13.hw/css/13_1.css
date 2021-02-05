@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.container-fluid, .container{
+	padding: 0;
+}
+header{
+	background-image: url(../images/bg-masthead.jpg);
+}
+nav>a{
+	color: white;
+}
+nav>a:hover{
+	text-decoration: none;
+}
+.menu-bar{
+	width: 80%;
+	margin: auto;
+}
+.menu-bar div>nav{
+	padding: 0;
+}
+.btnfix{
+	background-color: #FA573D;
+	border-color: #FA573D;
+	border-radius: 50px;
+}
+.btnfix2{
+	margin-top: 0;
+}
+.box-1{
+	padding: 100px 0;
+	margin: 0;
+}
+.box-1a{
+	background-color: #FA573D;
+}
+.title-1b{
+	padding-top: 30px;
+}
+.box-1 div>.title-1{
+	width: 70%;
+	margin: auto;
+	font-size: 50px;
+	line-height: 1.2;
+}
+.title-1a{
+	width: 70%;
+	margin: auto;
+	font-size: 26px;
+	line-height: 1.2;
+}
+.title-2{
+	width: 60%;
+	margin: auto;
+}
+.btn{
+	padding: 10px 20px;
+	margin-top: 40px;
+	border-radius: 50px;
+}
+.hr1{
+	background-color: #FA573D;
+	height: 2px;
+	width: 45px;
+	margin: 30px auto;
+}
+.hr2{
+	background-color: white;
+	height: 2px;
+	width: 45px;
+	margin: 30px auto;
+}
+.box-1 div p>i{
+	font-size: 50px;
+	color: #FA573D;
+	margin-top: 20px;
+}
+.box-2{
+	margin: 0;
+}
+.box-2 div>img{
+	width: 100%;
+}
+.img-pd{
+	padding: 0;
+}
+.box-2a{
+	padding: 100px 0;
+}
+.box-2a .butt>button{
+	margin-top: 10px;
+}
+.box-3{
+	margin: 100px 0;
+}
+.box-3 .squa-l>p{
+	padding-left: 350px;
+}
+.box-3 .squa-r>p{
+	padding-right: 350px;
+}
+.box-3 div p>i{
+	font-size: 40px;	
+	margin-top: 50px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+	.menu-bar{
+		width: 80%;
+	}
+	.box-3 .squa-l>p{
+		padding-left: 0;
+	}
+	.box-3 .squa-r>p{
+		padding-right: 0;
+	}
+	nav>a{
+		color: white;
+	}
+	nav>a:focus{
+		text-decoration: none;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	.menu-bar{
+		width: 90%;
+	}
+	nav>a{
+		color: white;
+	}
+	nav>a:focus{
+		text-decoration: none;
+	}
+	nav div .navbar-nav .nav-item>.nav-link{
+		color: white;
+		font-size: 13px;
+	}
+	.box-1 div>.title-1{
+		width: 80%;
+		margin: auto;
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	.box-1 div>.title-2{
+		width: 75%;
+		margin: auto;
+	}
+	.box-3 .squa-l>p{
+		padding-left: 0;
+	}
+	.box-3 .squa-r>p{
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+	.menu-bar{
+		width: 100%;
+		background-color: white;
+	}
+	nav>a{
+		color: red;
+		padding: 10px 0;
+	}
+	nav button span>i{
+		color: black;
+	}
+	nav div .navbar-nav .nav-item>.nav-link{
+		color: black;
+		font-size: 13px;
+	}
+	nav div .navbar-nav .nav-item>.nav-link:focus{
+		color: #FA573D;
+	}
+	.box-1 div>.title-1{
+		width: 95%;
+		margin: auto;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+	.box-1 div>.title-1a{
+		width: 100%;
+		margin: auto;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	.box-1 div>.title-2{
+		width: 95%;
+		margin: auto;
+	}
+	.box-1 div>.btn{
+		padding: 10px 20px;
+		margin-top: 30px;
+		font-size: 14px;
+	}
+	.box-3 .squa-l>p{
+		padding-left: 0;
+	}
+	.box-3 .squa-r>p{
+		padding-right: 0;
+	}
+}
+@media only screen and (max-width: 575px){
+	.menu-bar{
+		width: 100%;
+		background-color: white;
+	}
+	nav>a{
+		font-size: 12px;
+		color: red;
+		padding: 10px 0;
+	}
+	nav button span>i{
+		color: black;
+	}
+	nav div .navbar-nav .nav-item>.nav-link{
+		color: black;
+		font-size: 10px;
+	}
+	nav div .navbar-nav .nav-item>.nav-link:focus{
+		color: #FA573D;
+	}
+	.box-1{
+		padding: 50px 0;
+	}
+	.box-1a{
+		padding: 0;
+	}
+	.box-1 div>.title-1{
+		font-size: 16px;
+		width: 100%;
+		margin: auto;
+		line-height: 1.2;
+	}
+	.box-1 div>.title-1a{
+		width: 100%;
+		margin: auto;
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	.box-1 div>.title-1b{
+		padding-top: 20px;
+	}
+	.box-1 div>.title-2{
+		font-size: 12px;
+		width: 100%;
+		margin: auto;
+	}
+	.box-1 div p>i{
+		font-size: 40px;
+		color: #FA573D;
+		margin-top: 20px;
+	}
+	.box-1 div>h4{
+		font-size: 18px;
+	}
+	.box-1 div>p{
+		font-size: 12px;
+	}
+	.box-2a{
+		padding: 50px 0;
+	}
+	.hr1, .hr2{
+		margin: 15px auto;
+	}
+	.btn{
+		margin-top: 20px;
+		font-size: 12px;
+	}
+	.btnfix1{
+		margin-bottom: 30px;
+		font-size: 12px;
+	}
+	.box-3{
+		margin: 0;
+	}
+	.box-3 div>.title-2{
+		font-size: 12px;
+		width: 100%;
+		margin: auto;
+	}
+	.box-3 .squa-l>p{
+		padding-left: 0;
+	}
+	.box-3 .squa-r>p{
+		padding-right: 0;
+	}
+	.box-3 div p>i{
+		font-size: 30px;	
+		margin-top: 20px;
+	}
+}
