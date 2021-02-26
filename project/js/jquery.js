@@ -64,16 +64,16 @@ $(document).ready(function ($) {
       },
 
       messages: {
-      name: "Please specify your name",
+      name: "Please enter your name",
 
       email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
+        required: "Please enter your email",
+        email: "Incorrect email format, please re-enter"
       },
 
-      subject: "Please specify subject for message",
+      subject: "Please enter your subject",
       
-      message: "Please specify message"
+      message: "Please enter your message"
     }
     });
 

@@ -62,11 +62,23 @@ header .banner {
 section {
 
 }
+/*counter*/
+	#content{
+		padding-top: 40px;
+	}
 
 /*.conatruction*/
 	.construction {
 		
 	}
+	.container-lg .row .text-center .card-title:hover{
+	 	color: #FDA60E;
+	 	cursor: pointer;
+	 }
+	 .container-lg .row .text-center .card-text:hover{
+	 	color: blue;
+	 	cursor: pointer;
+	 }
 	.firstTitle .card {
 		border: none;
 	}
@@ -84,6 +96,9 @@ section {
 	}
 	.aboutUs .container {
 		
+	}
+	.text-center .col-12 .title:hover{
+		color: #FDA60E;
 	}
 	.aboutUs .container .firstTitle {
 		width: 90%;
@@ -154,9 +169,20 @@ section {
 	.What-we-offer {
 		margin: 50px 0;
 	}
+	.text-center .card:hover{
+		background: #FFD180;
+		cursor: pointer;
+	}
+	.no-gutters .col-md-8 .card-body .card-title:hover{
+		color: #FDA60E;
+		cursor: pointer;
+	}
 
 	.firstTitle .card .card-body p {
 		margin: 25px !important;	
+	}
+	.container .quote .btn:hover{
+		color: #FDA60E;
 	}
 	
 
@@ -184,6 +210,14 @@ section {
 	.item-text {
 		background: white;
 
+	}
+	.text-center .name:hover{
+		color: #FABD04;
+		cursor: pointer;
+	}
+	.text-center .job:hover{
+		color: #111CF5;
+		cursor: pointer;
 	}
 	.text-obj {
 		background: #EAEAEA;
@@ -219,6 +253,9 @@ section {
  		color: red;
  		font-style: italic;
  	}
+ 	.pt-5{
+ 		margin-bottom: 50px;
+ 	}
 
 
 
@@ -253,6 +290,7 @@ section {
 	background-color: #3562F6;
 	border-radius: 50%;
 	margin-top: 30px;
+	cursor: pointer;
 }
 .page-10 #social>span:hover{
 	background-color: white;
@@ -280,4 +318,54 @@ section {
 	margin-top: 20px;
 	padding-bottom: 50px;
 }
+/*our-team*/
+	.card-body .name:hover{
+		color: #FABD04;
+		cursor: pointer;
+
+	}
+	.card-body .job:hover{
+		color: #111CF5;
+		cursor: pointer;
+
+	}
+@media all and (min-width: 320px) and (max-width: 500px){
+	.page-10 .trung>img{
+		font-size: 20px;
+		width: 50%;
+	}
+	.page-10 #social>span{
+		width: 30px;
+		height: 30px;
+	}
+	.page-10 #social span>i{
+		font-size: 22px;
+	}
+}
+@media all and (min-width: 501px) and (max-width: 768px){
+	.page-10 .trung>img{
+		font-size: 25px;
+		width: 50%;
+	}
+	.page-10 #social>span{
+		width: 35px;
+		height: 35px;
+	}
+	.page-10 #social span>i{
+		font-size: 25px;
+	}
+}	
+@media all and (min-width: 760px) and (max-width: 1024px){
+	.page-10 .trung>img{
+		font-size: 25px;
+		width: 50%;
+	}
+	.page-10 #social>span{
+		width: 35px;
+		height: 35px;
+	}
+	.page-10 #social span>i{
+		font-size: 25px;
+	}
+}	
 
